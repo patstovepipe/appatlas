@@ -1,0 +1,25 @@
+====================
+  Simple
+====================
+
+component
+----------
+id, system, name, server, hosting_solution, department, primary_contact, url, technology, type, environment, notes, date_updated
+
+====================
+  Complex
+====================
+
+System
+----------
+id
+
+Component
+----------
+id 
+systemid
+name
+
+Server
+----------
+
