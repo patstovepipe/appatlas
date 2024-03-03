@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "dbup": "docker compose -f docker-compose.debug.yml up -d --build",
+    "dbdown": "docker compose -f docker-compose.debug.yml down -v"
   },
   "dependencies": {
     "@prisma/client": "^5.10.2",

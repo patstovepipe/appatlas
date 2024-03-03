@@ -12,3 +12,19 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model component {
+  id                Int      @id @default(autoincrement())
+  system            String?  @db.VarChar(50)
+  name              String   @db.VarChar(50)
+  server            String?  @db.VarChar(50)
+  hosting_solution  String   @db.VarChar(50)
+  department        String   @db.VarChar(50)
+  primary_contact   String?  @db.VarChar(50)
+  url               String?  @db.VarChar(50)
+  technology        String?  @db.VarChar(50)
+  type              String   @db.VarChar(50)
+  environment       String   @db.VarChar(20)
+  notes             String?
+  date_updated      DateTime @default(now())
+}
